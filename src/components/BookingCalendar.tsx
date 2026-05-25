@@ -55,7 +55,7 @@ export default function BookingCalendar() {
   };
 
   const shareText = generateMessage();
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=5511999999999&text=${encodeURIComponent(shareText)}`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${therapistInfo.whatsappNumber}&text=${encodeURIComponent(shareText)}`;
 
   return (
     <div id="booking-planner" className="max-w-5xl mx-auto bg-white rounded-3xl border border-coral-100 shadow-sm overflow-hidden">
@@ -227,17 +227,22 @@ export default function BookingCalendar() {
               <div className="flex gap-3">
                 <Video size={18} className="text-coral-600 shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-semibold block">Sessões Online Seguras:</span>
-                  Disponível para todo o Brasil e brasileiros no exterior via plataformas criptografadas em conformidade com o CFP.
+                  <span className="font-semibold block text-coral-950">Atendimento Online:</span>
+                  Para todo o país através de chamada de vídeo. Ambiente seguro e sigiloso.
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <MapPin size={18} className="text-coral-600 shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-semibold block">Modalidade Presencial:</span>
-                  Possibilidade de agendamento em consultório acolhedor conforme disponibilidade de horários clínicos.
+                  <span className="font-semibold block text-coral-950">Atendimento Presencial:</span>
+                  No Espaço Terapêutico UNOA, localizado no Jardim Vera Cruz em Sorocaba/SP. Ambiente acolhedor e aconchegante.
                 </div>
+              </div>
+
+              <div className="p-3 bg-coral-100/50 border border-coral-200/30 rounded-xl leading-relaxed text-[11px] text-coral-900 font-medium space-y-1">
+                <p>• <strong>Não atendo convênios!</strong> (Particular)</p>
+                <p>• <strong>Gestantes podem iniciar em qualquer fase!</strong></p>
               </div>
             </div>
 

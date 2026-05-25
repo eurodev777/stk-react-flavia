@@ -7,7 +7,7 @@ import {
   HelpCircle,
   Sparkles
 } from 'lucide-react';
-import { faqData } from '../data';
+import { faqData, therapistInfo } from '../data';
 
 export default function FAQ() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -137,7 +137,7 @@ export default function FAQ() {
 
         <a
           id="faq-whatsapp-direct"
-          href={`https://api.whatsapp.com/send?phone=5511999999999&text=${encodeURIComponent('Olá, Flávia! Eu estava lendo as Dúvidas Frequentes no seu site e gostaria de esclarecer uma dúvida sobre meu caso.')}`}
+          href={`https://api.whatsapp.com/send?phone=${therapistInfo.whatsappNumber}&text=${encodeURIComponent('Olá, Flávia! Eu estava lendo as Dúvidas Frequentes no seu site e gostaria de esclarecer uma dúvida sobre meu caso.')}`}
           target="_blank"
           rel="noreferrer"
           className="px-5 py-2.5 bg-coral-600 hover:bg-coral-700 text-white font-medium rounded-xl text-xs cursor-pointer transition-colors"
