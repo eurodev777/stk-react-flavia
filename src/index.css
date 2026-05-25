@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+  
+  /* Custom safe and warm brand colors for perinatal workspace */
+  --color-cream: #FAF6F0;
+  --color-charcoal-900: #15181B;
+  --color-charcoal-800: #262D33;
+  --color-charcoal-700: #414B54;
+  --color-charcoal-600: #5C6A75;
+  --color-charcoal-500: #7E909E;
+  --color-charcoal-400: #A7B8C4;
+  --color-coral-950: #3E160D;
+  --color-coral-800: #85311F;
+  --color-coral-700: #A84531;
+  --color-coral-600: #C25640;
+  --color-coral-500: #D86F58;
+  --color-coral-400: #E68F7A;
+  --color-coral-300: #F0B0A1;
+  --color-coral-200: #F7D1C8;
+  --color-coral-100: #FCE6E1;
+  --color-coral-50: #FFF5F3;
+  --color-peach-100: #FDEBD4;
+  --color-clay-100: #ECE0D2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF6F0; /* Cream default */
+  color: #262D33; /* Charcoal-800 default */
+  font-family: var(--font-sans);
+}

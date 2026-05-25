@@ -1,0 +1,6 @@
+{
+  "name": "Flávia Elizabeth - Psicologia Perinatal",
+  "description": "Website profissional da Psicóloga Perinatal Flávia Elizabeth Oliva de Morais (CRP: 06/69852). Cuidando de quem cuida, oferecendo apoio perinatal, pós-parto, tratamento de depressão, luto e planejamento familiar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
