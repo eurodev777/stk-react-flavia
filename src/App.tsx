@@ -14,7 +14,8 @@ import {
   MousePointerClick,
   ChevronRight,
   Sparkles,
-  Bookmark
+  Bookmark,
+  Check
 } from 'lucide-react';
 import { therapistInfo } from './data';
 import Services from './components/Services';
@@ -332,6 +333,81 @@ export default function App() {
                     <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full inline-block animate-pulse" />
                     Sala Virtual Segura e Privada
                   </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* POR QUE FAZER TERAPIA? */}
+        <section className="py-16 md:py-24 bg-cream border-t border-b border-coral-200/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto space-y-12">
+              
+              <div className="text-center space-y-3">
+                <span className="text-xs uppercase font-mono tracking-widest text-coral-600 font-bold bg-coral-100/40 px-3 py-1.5 rounded-full inline-block">
+                  Cuidado Necessário
+                </span>
+                <h2 className="font-serif text-3xl md:text-5xl text-charcoal-900 tracking-tight">
+                  Por que fazer terapia nessa fase?
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <div className="space-y-6 text-left flex flex-col justify-center">
+                  <p className="font-sans text-charcoal-800 text-base md:text-lg leading-relaxed font-semibold">
+                    A chegada de um filho transforma profundamente a vida da mulher.
+                  </p>
+                  <p className="font-sans text-charcoal-700 text-sm md:text-base leading-relaxed">
+                    Mudanças hormonais, emocionais, familiares e profissionais podem gerar inseguranças, ansiedade, medo, culpa e sobrecarga emocional.
+                  </p>
+                  <p className="font-sans text-charcoal-700 text-sm md:text-base leading-relaxed">
+                    A terapia perinatal oferece um espaço seguro de escuta e acolhimento para que a mulher possa viver essa fase com mais equilíbrio emocional, autoconhecimento e suporte psicológico.
+                  </p>
+                  <div className="bg-coral-100/40 p-5 rounded-2xl border border-coral-200/30">
+                    <p className="font-serif text-charcoal-900 text-sm md:text-base font-bold italic">
+                      "Cada mulher vive a maternidade de uma forma única e não precisa passar por isso sozinha."
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-coral-200/40 shadow-xs text-left flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-serif text-lg font-bold text-charcoal-900 mb-4 flex items-center gap-2">
+                      <Sparkles size={18} className="text-coral-600" />
+                      Ela pode ajudar em momentos como:
+                    </h3>
+                    
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {[
+                        "Tentativa de engravidar",
+                        "Gestação",
+                        "Medos relacionados ao parto",
+                        "Ansiedade na maternidade",
+                        "Puerpério",
+                        "Sobrecarga emocional",
+                        "Alterações no relacionamento",
+                        "Construção da identidade materna",
+                        "Dificuldade de adaptação à nova rotina",
+                        "Sentimentos de culpa, exaustão ou insegurança"
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-xs md:text-sm text-charcoal-700 leading-tight">
+                          <Check size={16} className="text-coral-600 shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="pt-6 mt-6 border-t border-slate-100 flex justify-center">
+                    <a
+                      href="#agendamento"
+                      className="w-full text-center py-3 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all"
+                    >
+                      Buscar Apoio Emocional
+                    </a>
+                  </div>
                 </div>
               </div>
 
