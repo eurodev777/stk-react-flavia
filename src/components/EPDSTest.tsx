@@ -103,7 +103,7 @@ export default function EPDSTest() {
 
 Gostaria de agendar uma consulta com você para conversar e receber esse acolhimento especializado.`;
     
-    return `https://api.whatsapp.com/send?phone=5511999999999&text=${encodeURIComponent(baseText)}`;
+    return `https://api.whatsapp.com/send?phone=${therapistInfo.whatsappNumber}&text=${encodeURIComponent(baseText)}`;
   };
 
   // Progress metrics

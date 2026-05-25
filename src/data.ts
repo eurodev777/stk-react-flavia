@@ -8,11 +8,14 @@ export const therapistInfo = {
   ctaText: "Oferecendo apoio emocional humanizado e especializado na gestação, parto e pós-parto.",
   aboutText: "Seja bem vindo(a), me chamo Flávia Elizabeth Oliva de Morais. Sou Psicóloga Perinatal (CRP: 06/69852), formada pela UNIP, especializada em \"Psicologia Perinatal e da Parentalidade\", oferecendo acolhimento emocional para mulheres durante a gestação, puerpério e maternidade.",
   aboutLong: "A transição para a maternidade envolve não apenas alegrias, mas também intensas transformações biológicas, psicológicas e sociais na vida de uma mulher. Meu trabalho é oferecer suporte especializado, ético e empático, criando um ambiente seguro e acolhedor para que as dores, as transformações da maternidade, medos e angústias sejam compartilhados e transformados em força, saúde mental e vínculos familiares seguros.",
-  whatsappNumber: "5511999999999", // Placeholder, will let users customize or send simulation
+  whatsappNumber: "5515988096168", 
+  phone: "(15) 98809-6168",
+  email: "flaviaoliva.psicologa@gmail.com",
+  location: "Sorocaba/SP",
   consultationDetails: {
-    format: "Atendimento Online (para todo o Brasil e brasileiros no exterior) e Presencial.",
-    approach: "Psicoterapia com base científica, acolhimento compassivo e foco no bem-estar biopsicossocial do núcleo familiar.",
-    duration: "Sessões individuais de 50 minutos."
+    format: "Atendimento Online para todo o país por chamada de vídeo. Atendimento Presencial no Espaço Terapêutico UNOA, no Jardim Vera Cruz em Sorocaba/SP.",
+    approach: "Psicoterapia com base científica, particular (não atendo convênios). Gestantes podem iniciar em qualquer fase!",
+    duration: "Sessões individuais com foco em acolhimento emocional na gestação, puerpério e maternidade."
   }
 };
 

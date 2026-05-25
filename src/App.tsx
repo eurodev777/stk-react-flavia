@@ -465,23 +465,54 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 text-left mb-12">
             
             {/* Logo and CRP */}
-            <div className="md:col-span-2 space-y-4">
+            <div className="space-y-4">
               <div className="space-y-1">
                 <span className="font-serif text-base font-bold text-white block">
                   Flávia Elizabeth Oliva de Morais
                 </span>
-                <span className="text-coral-500 font-mono text-xs block">
-                  Psicóloga Clínica Perinatal • CRP: 06/69852
+                <span className="text-coral-500 font-mono text-xs block font-bold">
+                  Psicóloga Perinatal • CRP: 06/69852
                 </span>
               </div>
-              <p className="text-charcoal-400 leading-relaxed font-sans max-w-sm">
-                Cuidando de quem cuida. Oferecendo apoio emocional personalizado e acolhimento clínico seguro na gestação, parto, pós-parto, luto e planejamento familiar.
+              <p className="text-charcoal-400 leading-relaxed font-sans text-xs">
+                Acolhendo o emocional de mulheres na gestação, puerpério e maternidade de forma ética, ética e humana. Cuidando de quem cuida.
               </p>
               
               <div className="inline-flex items-center gap-1.5 text-[10px] bg-charcoal-800 text-charcoal-300 px-3 py-1.5 rounded-lg font-mono">
-                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
                 <span>Cadastro e-Psi Ativo para teleconsulta</span>
               </div>
+            </div>
+
+            {/* Contato e Localização */}
+            <div className="space-y-3 font-sans text-xs text-charcoal-400">
+              <h4 className="font-serif text-white font-semibold uppercase tracking-wider text-xs">Contato e Locais</h4>
+              <ul className="space-y-2">
+                <li>
+                  <strong className="text-charcoal-300 block">WhatsApp / Telefone:</strong>
+                  <a href="https://wa.me/5515988096168" target="_blank" rel="noreferrer" className="hover:text-coral-400 underline font-medium block">
+                    (15) 98809-6168
+                  </a>
+                </li>
+                <li>
+                  <strong className="text-charcoal-300 block">E-mail:</strong>
+                  <a href="mailto:flaviaoliva.psicologa@gmail.com" className="hover:text-coral-400 underline block">
+                    flaviaoliva.psicologa@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <strong className="text-charcoal-300 block">Atendimento Presencial:</strong>
+                  <span>Espaço Terapêutico UNOA • Jardim Vera Cruz, Sorocaba/SP</span>
+                </li>
+                <li>
+                  <strong className="text-charcoal-300 block">Atendimento Online:</strong>
+                  <span>Todo o país via chamada de vídeo segura</span>
+                </li>
+                <li className="pt-1 text-[11px] text-coral-500 font-semibold leading-normal">
+                  Particular (Não atendo convênios)<br />
+                  Gestantes podem iniciar em qualquer fase!
+                </li>
+              </ul>
             </div>
 
             {/* Quick Links Nav */}
