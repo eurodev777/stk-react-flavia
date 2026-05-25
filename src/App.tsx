@@ -193,7 +193,7 @@ export default function App() {
                   <div className="rounded-3xl overflow-hidden border-2 border-white shadow-xl bg-slate-100 aspect-3/4">
                     <img 
                       id="therapist-portrait"
-                      src="/input_file_0.png" 
+                      src="psicologa.jpeg" 
                       alt="Flávia Elizabeth Oliva de Morais - Psicóloga Perinatal" 
                       className="w-full h-full object-cover select-none scale-102 hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
