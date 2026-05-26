@@ -1,37 +1,45 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Baby, 
-  Brain, 
-  Flower, 
-  HeartCrack, 
-  Sparkles, 
-  ShieldAlert, 
-  Compass, 
-  Check, 
-  ChevronDown, 
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  Baby,
+  Brain,
+  Flower,
+  HeartCrack,
+  Sparkles,
+  ShieldAlert,
+  Compass,
+  Check,
+  ChevronDown,
   ChevronUp,
-  ArrowRight
-} from 'lucide-react';
-import { servicesData } from '../data';
-import { ServiceItem } from '../types';
+  ArrowRight,
+} from "lucide-react";
+import { servicesData } from "../data";
+import { ServiceItem } from "../types";
 
 // Helper to render correct icon
-const ServiceIcon = ({ name, size = 24, className = "" }: { name: string; size?: number; className?: string }) => {
+const ServiceIcon = ({
+  name,
+  size = 24,
+  className = "",
+}: {
+  name: string;
+  size?: number;
+  className?: string;
+}) => {
   switch (name) {
-    case 'Baby':
+    case "Baby":
       return <Baby size={size} className={className} />;
-    case 'BrainActivity':
+    case "BrainActivity":
       return <Brain size={size} className={className} />;
-    case 'Flower':
+    case "Flower":
       return <Flower size={size} className={className} />;
-    case 'HeartCrack':
+    case "HeartCrack":
       return <HeartCrack size={size} className={className} />;
-    case 'Sparkles':
+    case "Sparkles":
       return <Sparkles size={size} className={className} />;
-    case 'ShieldAlert':
+    case "ShieldAlert":
       return <ShieldAlert size={size} className={className} />;
-    case 'Compass':
+    case "Compass":
       return <Compass size={size} className={className} />;
     default:
       return <Baby size={size} className={className} />;
@@ -59,30 +67,36 @@ export default function Services() {
           Apoio Emocional sob Medida
         </h2>
         <p className="font-sans text-charcoal-600 text-sm md:text-base leading-relaxed">
-          Cada fase do pré-natal ao pós-parto exige um olhar diferenciado. Clique em cada especialidade para conhecer os detalhes do tratamento e os benefícios que trazem para você e sua família.
+          Cada fase do pré-natal ao pós-parto exige um olhar diferenciado.
+          Clique em cada especialidade para conhecer os detalhes do tratamento e
+          os benefícios que trazem para você e sua família.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {servicesData.map((service, index) => {
           const isExpanded = expandedId === service.id;
-          
+
           return (
             <motion.div
               layout
               key={service.id}
               onClick={() => toggleExpand(service.id)}
               className={`bg-white rounded-2xl border text-left p-6 transition-all duration-300 cursor-pointer select-none origin-center ${
-                isExpanded 
-                  ? 'border-coral-300 ring-1 ring-coral-100/50 shadow-md md:col-span-2' 
-                  : 'border-coral-100/40 hover:border-coral-200 hover:shadow-sm'
+                isExpanded
+                  ? "border-coral-300 ring-1 ring-coral-100/50 shadow-md md:col-span-2"
+                  : "border-coral-100/40 hover:border-coral-200 hover:shadow-sm"
               }`}
             >
               <div className="flex items-start md:items-center justify-between gap-4">
                 <div className="flex items-start md:items-center gap-4">
-                  <div className={`p-3.5 rounded-xl shrink-0 transition-colors ${
-                    isExpanded ? 'bg-coral-100 text-coral-700' : 'bg-cream text-coral-600'
-                  }`}>
+                  <div
+                    className={`p-3.5 rounded-xl shrink-0 transition-colors ${
+                      isExpanded
+                        ? "bg-coral-100 text-coral-700"
+                        : "bg-cream text-coral-600"
+                    }`}
+                  >
                     <ServiceIcon name={service.iconName} size={24} />
                   </div>
                   <div>
@@ -96,7 +110,11 @@ export default function Services() {
                 </div>
 
                 <div className="p-1 rounded-full text-charcoal-400 hover:text-coral-600 transition-colors shrink-0">
-                  {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                  {isExpanded ? (
+                    <ChevronUp size={20} />
+                  ) : (
+                    <ChevronDown size={20} />
+                  )}
                 </div>
               </div>
 
@@ -110,7 +128,6 @@ export default function Services() {
                     className="overflow-hidden"
                   >
                     <div className="mt-6 pt-6 border-t border-slate-100 grid grid-cols-1 md:grid-cols-5 gap-6">
-                      
                       {/* Full description column */}
                       <div className="md:col-span-3 space-y-3">
                         <span className="text-[10px] bg-slate-100 text-slate-800 font-mono font-bold px-2 py-1 rounded-md uppercase">
@@ -119,19 +136,6 @@ export default function Services() {
                         <p className="text-sm text-charcoal-700 leading-relaxed font-sans">
                           {service.fullDescription}
                         </p>
-                        
-                        <div className="pt-4">
-                          <a
-                            href={`#agendamento-consultas`}
-                            onClick={(e) => {
-                              e.stopPropagation(); // Avoid collapsing
-                            }}
-                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-coral-600 hover:text-coral-700 transition-colors group"
-                          >
-                            Agendar para esta modalidade
-                            <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                          </a>
-                        </div>
                       </div>
 
                       {/* Benefits column */}
@@ -141,14 +145,19 @@ export default function Services() {
                         </span>
                         <ul className="space-y-2.5">
                           {service.benefits.map((benefit, bIdx) => (
-                            <li key={bIdx} className="flex items-start gap-2.5 text-xs text-charcoal-700 leading-relaxed font-sans">
-                              <Check size={14} className="text-emerald-600 shrink-0 mt-0.5" />
+                            <li
+                              key={bIdx}
+                              className="flex items-start gap-2.5 text-xs text-charcoal-700 leading-relaxed font-sans"
+                            >
+                              <Check
+                                size={14}
+                                className="text-emerald-600 shrink-0 mt-0.5"
+                              />
                               <span>{benefit}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
-
                     </div>
                   </motion.div>
                 )}
