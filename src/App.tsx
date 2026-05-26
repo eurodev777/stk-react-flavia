@@ -127,13 +127,6 @@ export default function App() {
                 Especialidades
               </a>
               <a
-                href="#autoavaliacao"
-                onClick={closeMobileMenu}
-                className="hover:text-coral-600 py-2 border-b border-coral-100/50 block"
-              >
-                Autoavaliação EPDS
-              </a>
-              <a
                 href="#agendamento"
                 onClick={closeMobileMenu}
                 className="hover:text-coral-600 py-2 border-b border-coral-100/50 block"
@@ -641,14 +634,6 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="#autoavaliacao"
-                    className="hover:text-coral-500 transition-colors"
-                  >
-                    Autoavaliação EPDS
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="#agendamento"
                     className="hover:text-coral-500 transition-colors"
                   >
@@ -707,7 +692,7 @@ export default function App() {
               Todos os direitos reservados.
             </p>
             <div className="flex gap-4">
-              <span>Desenvolvido com Foco e Ética do Cuidado</span>
+              <span>Desenvolvido por <a href="sohtink.com.br" target="_blank">Sothink Mkt</a></span>
             </div>
           </div>
         </div>
