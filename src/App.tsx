@@ -503,7 +503,7 @@ export default function App() {
         </section> */}
 
         {/*预约 RESERVATION PRE-BOOKING SYSTEM */}
-        <section id="agendamento" className="py-16 md:py-24 bg-white">
+        {/* <section id="agendamento" className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="text-center max-w-2xl mx-auto space-y-3 mb-10">
               <span className="text-xs uppercase font-mono tracking-widest text-coral-600 font-bold bg-coral-100/40 px-3 py-1.5 rounded-full inline-block">
@@ -521,7 +521,7 @@ export default function App() {
 
             <BookingCalendar />
           </div>
-        </section>
+        </section> */}
 
         {/* FAQ ACCORDION SECTION */}
         <section
