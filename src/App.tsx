@@ -62,12 +62,6 @@ export default function App() {
               Especialidades
             </a>
             <a
-              href="#autoavaliacao"
-              className="hover:text-coral-600 transition-colors"
-            >
-              Autoavaliação EPDS
-            </a>
-            <a
               href="#agendamento"
               className="hover:text-coral-600 transition-colors"
             >
