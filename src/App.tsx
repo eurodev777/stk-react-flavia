@@ -29,32 +29,17 @@ import WhatsAppWidget from "./components/WhatsAppWidget";
 // Available avatars for the chat head
 const AVATARS = [
     {
-        id: "female-doc",
-        label: "Dra. Ana Carolina (Pediatria)",
-        role: "Pediatra & Clínica Geral",
-        url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
-    }, {
-        id: "male-doc",
-        label: "Dr. Mateus Silva (Cardio)",
-        role: "Cardiologia Integrativa",
-        url: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=200&auto=format&fit=crop"
-    }, {
-        id: "attendant",
-        label: "Amanda Souza (Atendimento)",
-        role: "Secretária & Recepção",
-        url: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop"
-    }, {
-        id: "clinic-logo",
-        label: "Logotipo VittaCare",
-        role: "Central de Triagem Vitta",
-        url: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=200&auto=format&fit=crop"
-    },
+        id: "psicologa-flavia",
+        label: "Flávia Oliva",
+        role: "Psicóloga Perinatal",
+        url: "/image.png"
+    }
 ];
 
 export default function App() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const phoneNumber = "+55 (11) 99888-7766"
-    const message = "Olá! Gostaria de agendar uma consulta médica na clínica."
+    const phoneNumber = "5515988096168"
+    const message = "Olá! Gostaria de agendar uma consulta"
     const bubbleText = "Agendar Consulta"
     const position = "bottom-right"
     const animation = "pulse"
@@ -64,9 +49,9 @@ export default function App() {
     const alwaysShowBubble = true;
     const showNotificationDot = true;
     // Agent profile
-    const selectedAvatarId = "female-doc";
-    const agentName = "Dra. Ana Carolina";
-    const agentSubtitle = "Pediatra & Clínica Geral";
+    const selectedAvatarId = "psicologa-flavia";
+    const agentName = "Flávia Oliva";
+    const agentSubtitle = "Psicóloga Perinatal";
     // Avatar ativo
     const activeAvatar = AVATARS.find((a) => a.id === selectedAvatarId) || AVATARS[0];
     const notifyClick = () => {
@@ -115,7 +100,7 @@ export default function App() {
 
                     {/* Desktop CTA Button */}
                     <div className="hidden lg:block">
-                        <a id="header-cta-btn" href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta" className="px-5 py-2.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all hover:shadow-sm">
+                        <a id="header-cta-btn" target="_blank" href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta" className="px-5 py-2.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all hover:shadow-sm">
                             Agendar Consulta
                         </a>
                     </div>
@@ -180,6 +165,7 @@ export default function App() {
 
                             <div className="pt-2">
                                 <a href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
+                                target="_blank"
                                     onClick={closeMobileMenu}
                                     className="w-full text-center block py-3.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold rounded-xl transition-colors">
                                     Agendar Consulta
@@ -652,7 +638,7 @@ export default function App() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta" className="hover:text-coral-500 transition-colors">
+                                    <a href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta" target="_blank" className="hover:text-coral-500 transition-colors">
                                         Agendar
                                     </a>
                                 </li>
