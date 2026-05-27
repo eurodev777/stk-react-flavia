@@ -7,6 +7,33 @@ export interface ServiceItem {
   iconName: string; // Lucide icon name
 }
 
+export interface GalleryItem {
+  id: string;
+  url: string;
+  title: string;
+  category: "clinical" | "detail" | "reception";
+  description: string;
+}
+
+export interface ClinicInfo {
+  name: string;
+  title: string;
+  crp: string;
+  address: string;
+  complement: string;
+  cep: string;
+  city: string;
+  state: string;
+  phone: string;
+  email: string;
+  whatsappUrl: string;
+  instagramUrl: string;
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
+}
+
 export interface EPDSOption {
   text: string;
   score: number;
@@ -27,7 +54,7 @@ export interface FAQItem {
 
 export interface TestResult {
   score: number;
-  riskLevel: 'low' | 'moderate' | 'high';
+  riskLevel: "low" | "moderate" | "high";
   title: string;
   explanation: string;
   recommendation: string;
@@ -36,7 +63,7 @@ export interface TestResult {
 
 export interface AppointmentDraft {
   serviceId: string;
-  period: 'morning' | 'afternoon' | 'night' | '';
+  period: "morning" | "afternoon" | "night" | "";
   name: string;
   isFirstTime: boolean;
   messageText: string;

@@ -158,6 +158,25 @@ export default function Services() {
                           ))}
                         </ul>
                       </div>
+
+                      <div className="pt-4">
+                        <a
+                          onClick={(e) => {
+                            e.stopPropagation(); // Avoid collapsing
+                            window.open(
+                              "https://wa.me/5515988096168?text=Olá! Quero agendar uma consulta.",
+                              "_blank",
+                            );
+                          }}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-coral-600 hover:text-coral-700 transition-colors group"
+                        >
+                          Agendar consulta
+                          <ArrowRight
+                            size={14}
+                            className="group-hover:translate-x-0.5 transition-transform"
+                          />
+                        </a>
+                      </div>
                     </div>
                   </motion.div>
                 )}

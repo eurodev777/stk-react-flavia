@@ -6,7 +6,6 @@ export const therapistInfo = {
   crp: "06/69852",
   slogan: "Cuidando de quem cuida",
   ctaText: "Oferecendo apoio emocional humanizado e especializado na gestação, parto e pós-parto.",
-  aboutText: "Seja bem vindo(a), me chamo Flávia Elizabeth Oliva de Morais. Sou Psicóloga Perinatal (CRP: 06/69852), Formada pela UNIP há mais de 20 anos, especializada em \"Psicologia Perinatal e da Parentalidade\", oferecendo acolhimento emocional para mulheres durante a gestação, puerpério e maternidade.",
   aboutLong: "A transição para a maternidade envolve não apenas alegrias, mas também intensas transformações biológicas, psicológicas e sociais na vida de uma mulher. Meu trabalho é oferecer suporte especializado, ético e empático, criando um ambiente seguro e acolhedor para que as dores, as transformações da maternidade, medos e angústias sejam compartilhados e transformados em força, saúde mental e vínculos familiares seguros.",
   whatsappNumber: "5515988096168", 
   phone: "(15) 98809-6168",
