@@ -68,7 +68,7 @@ export const servicesData: ServiceItem[] = [
       "Validação social e emocional da parentalidade interrompida",
       "Prevenção e tratamento do luto complicado",
       "Suporte em gestações subsequentes após uma perda perinatal",
-      "Ajuda para os parceiros e rede de apoio que vicenciaram"
+      "Ajuda para os parceiros e rede de apoio que vivenciaram"
     ],
     iconName: "HeartCrack"
   },
