@@ -62,12 +62,6 @@ export default function App() {
             >
               Especialidades
             </a>
-            <a
-              href="#agendamento"
-              className="hover:text-coral-600 transition-colors"
-            >
-              Agendamentos
-            </a>
             <a href="#faq" className="hover:text-coral-600 transition-colors">
               FAQ
             </a>
@@ -77,7 +71,7 @@ export default function App() {
           <div className="hidden lg:block">
             <a
               id="header-cta-btn"
-              href="#agendamento"
+              href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
               className="px-5 py-2.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all hover:shadow-sm"
             >
               Agendar Consulta
@@ -138,7 +132,7 @@ export default function App() {
 
               <div className="pt-2">
                 <a
-                  href="#agendamento"
+                  href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
                   onClick={closeMobileMenu}
                   className="w-full text-center block py-3.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold rounded-xl transition-colors"
                 >
@@ -569,7 +563,7 @@ export default function App() {
                     WhatsApp / Telefone:
                   </strong>
                   <a
-                    href="https://wa.me/5515988096168"
+                    href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-coral-400 underline font-medium block"
@@ -632,7 +626,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="#agendamento"
+                    href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
                     className="hover:text-coral-500 transition-colors"
                   >
                     Agendar
