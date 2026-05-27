@@ -23,7 +23,7 @@ import BookingCalendar from "./components/BookingCalendar";
 import FAQ from "./components/FAQ";
 import FloatWhatsapp from "./components/FloatWhatsapp";
 import EPDSTest from "./components/EPDSTest";
-import local from "./assets/local.jpeg"
+import local from "./assets/local.jpeg";
 
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -265,7 +265,7 @@ export default function App() {
                     Biografia Profissional
                   </span>
                   <h2 className="font-serif text-3xl md:text-5xl text-charcoal-900 tracking-tight">
-                    Flávia Elizabeth Oliva de Morais
+                    Flávia Oliva
                   </h2>
                   <p className="text-xs font-semibold uppercase tracking-wider text-charcoal-500 font-mono">
                     Psicóloga Perinatal • CRP: 06/69852
@@ -344,7 +344,7 @@ export default function App() {
 
                   <div className="space-y-1">
                     <h4 className="text-sm font-semibold text-charcoal-900">
-                      2. Prevenção e Triagem Ativas (Pré-Natal Psicológico)
+                      2. Atendimento Presencial
                     </h4>
                     <p className="text-xs text-charcoal-600 leading-relaxed">
                       Atendimento presencial no Espaço Terapêutico UNOA,
@@ -377,7 +377,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="w-full lg:h-[160vh] h-[80vh] flex items-center justify-center">
+        <section className="w-full lg:h-[160vh] h-[80vh] flex items-center justify-center pb-16">
           <img src={local} className="lg:w-1/2 h-full" />
         </section>
 
@@ -390,7 +390,7 @@ export default function App() {
 
           <div className="max-w-4xl mx-auto px-4 relative z-10 space-y-4">
             <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed italic">
-              "Acolher a mãe é também acolher o bebê. A saúde emocional dos pais
+              "Acolher a mãe é também acolher o bebê. <br className="sm:hidden block" />A saúde emocional dos pais
               é o alicerce fundamental para a formação de um apego seguro e de
               uma infância saudável."
             </h3>
