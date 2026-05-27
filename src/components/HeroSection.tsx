@@ -199,7 +199,7 @@ export default function Hero() {
                     >
                       <img
                         id="transformation-image"
-                        src="psicologa.jpeg"
+                        src="/src/assets/images/mother_baby_peace_1779914395370.png"
                         alt="Mulher alegre e tranquila segurando seu recém-nascido no colo com paz e leveza"
                         className="w-full h-full object-cover select-none transition-transform duration-700 group-hover:scale-103"
                         referrerPolicy="no-referrer"
@@ -225,7 +225,7 @@ export default function Hero() {
                     >
                       <img
                         id="therapist-portrait"
-                        src="/src/assets/images/psicologa_portrait_1779914417320.png"
+                        src="psicologa.jpeg"
                         alt="Flávia Elizabeth - Psicóloga Perinatal CRP 06/69852"
                         className="w-full h-full object-cover select-none transition-transform duration-700 group-hover:scale-103"
                         referrerPolicy="no-referrer"
