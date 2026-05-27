@@ -23,6 +23,7 @@ import BookingCalendar from "./components/BookingCalendar";
 import FAQ from "./components/FAQ";
 import FloatWhatsapp from "./components/FloatWhatsapp";
 import EPDSTest from "./components/EPDSTest";
+import local from "./assets/local.jpeg"
 
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function App() {
           {/* Brand Logo and Title */}
           <a href="#" className="flex flex-col text-left group">
             <h1 className="font-serif text-lg md:text-xl font-bold text-charcoal-900 leading-none group-hover:text-coral-700 transition-colors">
-              Flávia Elizabeth
+              Flávia Oliva
             </h1>
             <span className="text-[10px] md:text-xs font-mono font-medium tracking-wide text-coral-600 mt-0.5">
               Psicologia Perinatal • CRP 06/69852
@@ -346,10 +347,9 @@ export default function App() {
                       2. Prevenção e Triagem Ativas (Pré-Natal Psicológico)
                     </h4>
                     <p className="text-xs text-charcoal-600 leading-relaxed">
-                      Planejamentos de puerpério específicos estruturados de
-                      acordo com o padrão científico mais avançado do país,
-                      reduzindo significativamente as chances de transtornos
-                      psicológicos pós-parto.
+                      Atendimento presencial no Espaço Terapêutico UNOA,
+                      localizado no Jardim Vera Cruz em Sorocaba/SP Ambiente
+                      acolhedor e aconchegante.
                     </p>
                   </div>
 
@@ -375,6 +375,10 @@ export default function App() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="w-full lg:h-[160vh] h-[80vh] flex items-center justify-center">
+          <img src={local} className="lg:w-1/2 h-full" />
         </section>
 
         {/* EMBRACING SLOGAN BANNER */}
@@ -536,7 +540,7 @@ export default function App() {
             <div className="space-y-4">
               <div className="space-y-1">
                 <span className="font-serif text-base font-bold text-white block">
-                  Flávia Elizabeth Oliva de Morais
+                  Flávia Oliva
                 </span>
                 <span className="text-coral-500 font-mono text-xs block font-bold">
                   Psicóloga Perinatal • CRP: 06/69852
@@ -651,8 +655,8 @@ export default function App() {
                 Conduta Ética
               </h4>
               <p className="text-charcoal-400 leading-relaxed text-xs">
-                A prática psicológica de Flávia Elizabeth atende integralmente
-                ao Código de Ética Profissional do Psicólogo estabelecido pelo
+                A prática psicológica de Flávia Oliva atende integralmente ao
+                Código de Ética Profissional do Psicólogo estabelecido pelo
                 Conselho Federal de Psicologia (CFP). No Brasil, todo psicólogo
                 atuante necessita de registro ativo de CRP no conselho regional
                 correspondente.
@@ -686,7 +690,12 @@ export default function App() {
               Todos os direitos reservados.
             </p>
             <div className="flex gap-4">
-              <span>Desenvolvido por <a href="sohtink.com.br" target="_blank">Sothink Mkt</a></span>
+              <span>
+                Desenvolvido por{" "}
+                <a href="sohtink.com.br" target="_blank">
+                  Sothink Mkt
+                </a>
+              </span>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ export const therapistInfo = {
   crp: "06/69852",
   slogan: "Cuidando de quem cuida",
   ctaText: "Oferecendo apoio emocional humanizado e especializado na gestação, parto e pós-parto.",
-  aboutText: "Seja bem vindo(a), me chamo Flávia Elizabeth Oliva de Morais. Sou Psicóloga Perinatal (CRP: 06/69852), formada pela UNIP, especializada em \"Psicologia Perinatal e da Parentalidade\", oferecendo acolhimento emocional para mulheres durante a gestação, puerpério e maternidade.",
+  aboutText: "Seja bem vindo(a), me chamo Flávia Elizabeth Oliva de Morais. Sou Psicóloga Perinatal (CRP: 06/69852), Formada pela UNIP há mais de 20 anos, especializada em \"Psicologia Perinatal e da Parentalidade\", oferecendo acolhimento emocional para mulheres durante a gestação, puerpério e maternidade.",
   aboutLong: "A transição para a maternidade envolve não apenas alegrias, mas também intensas transformações biológicas, psicológicas e sociais na vida de uma mulher. Meu trabalho é oferecer suporte especializado, ético e empático, criando um ambiente seguro e acolhedor para que as dores, as transformações da maternidade, medos e angústias sejam compartilhados e transformados em força, saúde mental e vínculos familiares seguros.",
   whatsappNumber: "5515988096168", 
   phone: "(15) 98809-6168",
@@ -37,7 +37,7 @@ export const servicesData: ServiceItem[] = [
     id: "transtornos-humor",
     title: "Tratamento de Transtornos de Humor Perinatais",
     shortDescription: "Apoio clínico especializado em ansiedade, depressão e psicose puerperal.",
-    fullDescription: "O puerpério e a gravidez envolvem oscilações hormonais severas e grande sobrecarga mental. Ofereço intervenção psicoterapêutica delicada e baseada em evidências para sintomas e transtornos como a depressão gestacional e pós-parto, transtornos de ansiedade generalizada (TAG), TOC perinatal e psicose puerperal, integrando acolhimento, cuidados médicos e proteção ao bebê.",
+    fullDescription: "O puerpério e a gravidez envolvem oscilações hormonais severas e grande sobrecarga mental. Ofereço intervenção psicoterapêutica delicada e baseada em evidências para sintomas e transtornos como a depressão gestacional e pós-parto, transtornos de ansiedade generalizada (TAG), psicose puerperal, integrando acolhimento e proteção ao bebê.",
     benefits: [
       "Diagnóstico precoce e desmistificação do sofrimento mental materno",
       "Redução da culpa e dos sentimentos de inadequação materna",
@@ -66,9 +66,9 @@ export const servicesData: ServiceItem[] = [
     fullDescription: "A perda de um bebê, seja no início da gestação, no parto ou logo após, gera uma dor profunda que frequentemente é silenciada ou minimizada pela sociedade. O acolhimento no luto perinatal oferece um espaço digno, respeitoso e amoroso para chorar a perda, validar a existência desse filho na história familiar e elaborar o luto de forma saudável.",
     benefits: [
       "Validação social e emocional da parentalidade interrompida",
-      "Prevenção e tratamento do luto complicado ou patológico",
+      "Prevenção e tratamento do luto complicado",
       "Suporte em gestações subsequentes após uma perda perinatal",
-      "Ajuda para os parceiros e rede de apoio processarem a perda juntos"
+      "Ajuda para os parceiros e rede de apoio que vicenciaram"
     ],
     iconName: "HeartCrack"
   },
@@ -89,10 +89,8 @@ export const servicesData: ServiceItem[] = [
     id: "gestacao-risco",
     title: "Manejo de Gestação de Risco",
     shortDescription: "Apoio e contenção emocional na iminência de partos prematuros ou condições clínicas complexas.",
-    fullDescription: "Diagnósticos médicos desafiadores, repouso absoluto prolongado ou risco à saúde da mãe ou do bebê impõem uma carga psicológica altíssima. Esse serviço oferece intervenção de suporte para diminuir o pânico, regular o sistema nervoso, criar resiliência mental e preparar a família para as incertezas de tratamentos intensivos ou partos antecipados.",
+    fullDescription: "Diagnósticos médicos desafiadores, repouso absoluto prolongado ou risco à saúde da mãe ou do bebê impõem uma carga psicológica altíssima. Esse serviço oferece intervenção de suporte para a ansiedade, regular o sistema nervoso, criar resiliência mental e preparar a família para as incertezas de tratamentos intensivos ou partos antecipados.",
     benefits: [
-      "Técnicas de relaxamento mental e regulação de ansiedade severa",
-      "Apoio para lidar com o isolamento do repouso prolongado",
       "Preparação emocional realista para cenários de UTI neonatal",
       "Preservação do bem-estar mental materno com impacto direto na estabilidade gestacional"
     ],
