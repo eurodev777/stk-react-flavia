@@ -199,7 +199,7 @@ export default function Hero() {
                     >
                       <img
                         id="transformation-image"
-                        src="/src/assets/images/mother_baby_peace_1779914395370.png"
+                        src="mulher.png"
                         alt="Mulher alegre e tranquila segurando seu recém-nascido no colo com paz e leveza"
                         className="w-full h-full object-cover select-none transition-transform duration-700 group-hover:scale-103"
                         referrerPolicy="no-referrer"
