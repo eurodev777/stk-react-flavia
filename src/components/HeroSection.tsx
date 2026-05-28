@@ -16,7 +16,7 @@ import {
 
 export default function Hero() {
   const [activeTab, setActiveTab] = useState<"transformation" | "therapist">(
-    "transformation",
+    "therapist",
   );
 
   const containerVariants = {
@@ -106,24 +106,14 @@ export default function Hero() {
             >
               <a
                 id="hero-primary-cta"
-                href="#agendamento"
+                href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
+                target="_blank"
                 className="group px-6 py-4 bg-coral-500 hover:bg-coral-600 text-white font-medium text-sm rounded-xl cursor-pointer transition-all hover:shadow-lg hover:shadow-coral-500/20 text-center flex items-center justify-center gap-2"
               >
                 <span>Agendar Conversa de Apoio</span>
                 <ArrowRight
                   size={16}
                   className="transition-transform group-hover:translate-x-1"
-                />
-              </a>
-              <a
-                id="hero-secondary-cta"
-                href="#autoavaliacao"
-                className="px-6 py-4 bg-white hover:bg-coral-50/30 text-charcoal-800 hover:text-coral-500 font-medium text-sm rounded-xl border border-charcoal-350 transition-all text-center inline-flex items-center justify-center gap-2 hover:border-coral-300"
-              >
-                <span>Fazer Autoavaliação EPDS</span>
-                <MousePointerClick
-                  size={16}
-                  className="text-coral-500 animate-pulse"
                 />
               </a>
             </motion.div>
