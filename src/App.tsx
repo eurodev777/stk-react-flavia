@@ -29,6 +29,7 @@ import Hero from "./components/HeroSection";
 import GoogleMapWrapper from "./components/GoogleMapWrapper";
 import LocationSection from "./components/LocationSection";
 import { ClinicInfo } from "./types";
+import Depoimentos from "./components/Depoimentos";
 
 // Available avatars for the chat head
 const AVATARS = [
@@ -288,6 +289,14 @@ export default function App() {
                 </div>
               </div>
 
+              <div className="w-full">
+                <img
+                  src="psicologa.jpeg"
+                  width={350}
+                  className="mx-auto rounded-3xl"
+                />
+              </div>
+
               {/* Approach Cards Column */}
               <div className="bg-white p-6 md:p-10 rounded-3xl border border-coral-200/40 shadow-xs space-y-6 text-left">
                 <h3 className="font-serif text-xl font-bold text-charcoal-900 border-b border-coral-100 pb-3 flex items-center gap-2">
@@ -374,6 +383,8 @@ export default function App() {
             <Services />
           </div>
         </section>
+
+        <Depoimentos />
 
         {/* FAQ ACCORDION SECTION */}
         <section

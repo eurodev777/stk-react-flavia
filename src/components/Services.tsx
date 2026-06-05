@@ -185,6 +185,16 @@ export default function Services() {
           );
         })}
       </div>
+
+      <div className="w-1/4 mx-auto">
+        <a
+          href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
+          target="_blank"
+          className="w-full text-center block py-3 bg-coral-700 hover:bg-coral-800 text-white text-lg font-bold rounded-xl transition-colors"
+        >
+          Agendar Consulta
+        </a>
+      </div>
     </div>
   );
 }

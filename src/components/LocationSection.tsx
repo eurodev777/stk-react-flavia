@@ -64,7 +64,7 @@ export default function LocationSection({ clinic }: LocationSectionProps) {
             />
 
             {/* Action buttons immediately below map */}
-            <div className="flex flex-col sm:flex-row gap-3">
+            {/* <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={handleCopy}
                 className={`flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-semibold border transition-all duration-300 cursor-pointer ${
@@ -98,7 +98,7 @@ export default function LocationSection({ clinic }: LocationSectionProps) {
                 <Navigation className="w-4 h-4 fill-slate-950" />
                 Como Chegar (Abrir no Google Maps)
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2: Details and Guide Tabs (5/12 cols) */}

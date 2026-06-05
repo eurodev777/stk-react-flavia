@@ -137,44 +137,18 @@ export default function Hero() {
 
           {/* Right Column: Interactive Image Switcher (5 columns on large screens) */}
           <div className="lg:col-span-5 flex flex-col items-center order-1 lg:order-2">
-            {/* View Switching Tab Header */}
-            <div className="flex gap-2 p-1.5 bg-coral-100/60 rounded-2xl mb-6 w-full max-w-sm border border-coral-200/20">
-              <button
-                onClick={() => setActiveTab("transformation")}
-                className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                  activeTab === "transformation"
-                    ? "bg-white text-coral-800 shadow-sm font-bold"
-                    : "text-charcoal-700 hover:text-coral-600 hover:bg-white/40"
-                }`}
-              >
-                <Sparkles
-                  size={13}
-                  className={
-                    activeTab === "transformation" ? "text-coral-500" : ""
-                  }
-                />
-                <span>Como você quer se sentir</span>
-              </button>
-              <button
-                onClick={() => setActiveTab("therapist")}
-                className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                  activeTab === "therapist"
-                    ? "bg-white text-coral-800 shadow-sm font-bold"
-                    : "text-charcoal-700 hover:text-coral-600 hover:bg-white/40"
-                }`}
-              >
-                <UserCheck
-                  size={13}
-                  className={activeTab === "therapist" ? "text-coral-500" : ""}
-                />
-                <span>Sua Psicóloga</span>
-              </button>
-            </div>
-
             {/* Main Visual Container */}
             <div className="relative w-full max-w-sm">
               {/* Decorative Warm Back-Frame */}
               <div className="absolute inset-0 bg-coral-200 border-2 border-coral-100 rounded-3xl translate-x-3 translate-y-3 -z-10 transition-transform duration-500 hover:translate-x-4 hover:translate-y-4" />
+
+              {/* Sub-image caption */}
+              <div className="mt-4 text-center max-w-sm bg-coral-100/35 px-4 py-2 rounded-2xl border border-coral-200/10">
+                <span className="text-[11px] text-charcoal-600 font-serif italic">
+                  Dra. Flávia Elizabeth Oliva de Morais — Psicoterapia focado no
+                  seu bem-estar psíquico.
+                </span>
+              </div>
 
               <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-slate-50 aspect-3/4">
                 <AnimatePresence mode="wait">
@@ -239,15 +213,6 @@ export default function Hero() {
                   )}
                 </AnimatePresence>
               </div>
-            </div>
-
-            {/* Sub-image caption */}
-            <div className="mt-4 text-center max-w-sm bg-coral-100/35 px-4 py-2 rounded-2xl border border-coral-200/10">
-              <span className="text-[11px] text-charcoal-600 font-serif italic">
-                {activeTab === "transformation"
-                  ? '"Cuidar da sua mente é o primeiro passo para nutrir a vida do seu bebê com paz."'
-                  : "Dra. Flávia Elizabeth Oliva de Morais — Psicoterapia focado no seu bem-estar psíquico."}
-              </span>
             </div>
           </div>
         </div>

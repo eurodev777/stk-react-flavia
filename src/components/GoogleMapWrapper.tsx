@@ -37,19 +37,10 @@ export default function GoogleMapWrapper({
       {/* Floating Mini Address Identity Banner for ease-of-use */}
       <div className="relative z-20 w-full bg-slate-900 text-white p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-opacity-95 backdrop-blur-xs border-t border-slate-800">
         <div className="text-left font-sans">
-          <p className="text-[10px] text-brand-lilac font-semibold tracking-wider font-mono">
-            MAPA INTERATIVO PRESENCIAL
-          </p>
           <p className="text-sm font-semibold">{clinic.address}</p>
           <p className="text-xs text-slate-300">
             {clinic.complement} &bull; {clinic.cep} &bull; Sorocaba, SP
           </p>
-        </div>
-        <div className="flex gap-2 w-full sm:w-auto self-stretch sm:self-center justify-end">
-          <span className="inline-flex items-center gap-1.5 text-xs bg-slate-800 text-slate-300 py-1.5 px-3 rounded-full border border-slate-700 font-mono">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Mapa Ativo
-          </span>
         </div>
       </div>
     </div>
