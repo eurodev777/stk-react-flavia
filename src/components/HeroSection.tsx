@@ -16,7 +16,7 @@ import {
 
 export default function Hero() {
   const [activeTab, setActiveTab] = useState<"transformation" | "therapist">(
-    "therapist",
+    "transformation",
   );
 
   const containerVariants = {
@@ -141,15 +141,14 @@ export default function Hero() {
             <div className="relative w-full max-w-sm">
               {/* Decorative Warm Back-Frame */}
               <div className="absolute inset-0 bg-coral-200 border-2 border-coral-100 rounded-3xl translate-x-3 translate-y-3 -z-10 transition-transform duration-500 hover:translate-x-4 hover:translate-y-4" />
-
               {/* Sub-image caption */}
               <div className="mt-4 text-center max-w-sm bg-coral-100/35 px-4 py-2 rounded-2xl border border-coral-200/10">
                 <span className="text-[11px] text-charcoal-600 font-serif italic">
-                  Dra. Flávia Elizabeth Oliva de Morais — Psicoterapia focado no
-                  seu bem-estar psíquico.
+                  {activeTab === "transformation"
+                    ? '"Cuidar da sua mente é o primeiro passo para nutrir a vida do seu bebê com paz."'
+                    : "Dra. Flávia Elizabeth Oliva de Morais — Psicoterapia focado no seu bem-estar psíquico."}
                 </span>
               </div>
-
               <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-slate-50 aspect-3/4">
                 <AnimatePresence mode="wait">
                   {activeTab === "transformation" ? (
