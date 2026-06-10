@@ -158,27 +158,25 @@ export default function LocationSection({ clinic }: LocationSectionProps) {
             {/* Guide Tabs (How to get here / accessibility) */}
             <div className="space-y-3">
               <div className="flex border-b border-slate-100 gap-4 text-xs font-semibold">
-                {[
-                  { key: "info", icon: Clock, label: "Atendimento" },
-                  { key: "parking", icon: Car, label: "Estacionamento" },
-                  { key: "transit", icon: Bus, label: "Transporte" },
-                ].map((tab) => {
-                  const TabIcon = tab.icon;
-                  return (
-                    <button
-                      key={tab.key}
-                      onClick={() => setActiveTab(tab.key as any)}
-                      className={`flex items-center gap-1.5 pb-2 border-b-2 font-medium transition-all cursor-pointer ${
-                        activeTab === tab.key
-                          ? "border-brand-lilac-dark text-brand-lilac-dark font-semibold"
-                          : "border-transparent text-slate-400 hover:text-slate-600"
-                      }`}
-                    >
-                      <TabIcon className="w-3.5 h-3.5" />
-                      {tab.label}
-                    </button>
-                  );
-                })}
+                {[{ key: "info", icon: Clock, label: "Atendimento" }].map(
+                  (tab) => {
+                    const TabIcon = tab.icon;
+                    return (
+                      <button
+                        key={tab.key}
+                        onClick={() => setActiveTab(tab.key as any)}
+                        className={`flex items-center gap-1.5 pb-2 border-b-2 font-medium transition-all cursor-pointer ${
+                          activeTab === tab.key
+                            ? "border-brand-lilac-dark text-brand-lilac-dark font-semibold"
+                            : "border-transparent text-slate-400 hover:text-slate-600"
+                        }`}
+                      >
+                        <TabIcon className="w-3.5 h-3.5" />
+                        {tab.label}
+                      </button>
+                    );
+                  },
+                )}
               </div>
 
               {/* Tab Contents */}
