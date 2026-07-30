@@ -306,7 +306,7 @@ export default function WhatsAppWidget({
             </div>
 
             {/* Input Form Footer */}
-            <form onSubmit={handleSendMessage} className="p-3 bg-white border-t border-neutral-100 flex items-center gap-2" id="chat-msg-form">
+            <form id="btn1" onSubmit={handleSendMessage} className="p-3 bg-white border-t border-neutral-100 flex items-center gap-2" id="chat-msg-form">
               <input
                 id="chat-user-text-input"
                 type="text"
