@@ -13,6 +13,7 @@ import {
   UserCheck,
   Sparkles,
 } from "lucide-react";
+import { handleConversion } from "../util/handleConversion";
 
 export default function Hero() {
   const [activeTab, setActiveTab] = useState<"transformation" | "therapist">(
@@ -106,6 +107,7 @@ export default function Hero() {
             >
               <a
                 id="hero-primary-cta"
+                onClick={handleConversion}
                 href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
                 target="_blank"
                 className="group px-6 py-4 bg-coral-500 hover:bg-coral-600 text-white font-medium text-sm rounded-xl cursor-pointer transition-all hover:shadow-lg hover:shadow-coral-500/20 text-center flex items-center justify-center gap-2"

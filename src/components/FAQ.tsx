@@ -8,6 +8,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { faqData, therapistInfo } from '../data';
+import { handleConversion } from '../util/handleConversion';
 
 export default function FAQ() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -137,6 +138,7 @@ export default function FAQ() {
 
         <a
           id="faq-whatsapp-direct"
+          onClick={handleConversion}
           href={`https://api.whatsapp.com/send?phone=${therapistInfo.whatsappNumber}&text=${encodeURIComponent('Olá, Flávia! Eu estava lendo as Dúvidas Frequentes no seu site e gostaria de esclarecer uma dúvida sobre meu caso.')}`}
           target="_blank"
           rel="noreferrer"

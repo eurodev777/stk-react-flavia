@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { servicesData } from "../data";
 import { ServiceItem } from "../types";
+import { handleConversion } from "../util/handleConversion";
 
 // Helper to render correct icon
 const ServiceIcon = ({
@@ -163,6 +164,7 @@ export default function Services() {
                         <a
                           onClick={(e) => {
                             e.stopPropagation(); // Avoid collapsing
+                            handleConversion();
                             window.open(
                               "https://wa.me/5515988096168?text=Olá! Quero agendar uma consulta.",
                               "_blank",

@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { epdsQuestions, therapistInfo } from '../data';
 import { TestResult } from '../types';
+import { handleConversion } from '../util/handleConversion';
 
 export default function EPDSTest() {
   const [currentStep, setCurrentStep] = useState<number>(0); // 0 = intro, 1-10 = questions, 11 = result
@@ -349,7 +350,8 @@ Gostaria de agendar uma consulta com você para conversar e receber esse acolhim
                 
                 <a
                   id="share-epds-whatsapp"
-                  href={getWhatsAppShareUrl()}
+                  href={getWhatsAppShareUrl}
+                  onClick={handleConversion}
                   target="_blank"
                   rel="noreferrer"
                   className="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-xl text-xs inline-flex items-center justify-center gap-1.5 cursor-pointer transition-all hover:shadow-lg shadow-emerald-600/10 active:scale-98"

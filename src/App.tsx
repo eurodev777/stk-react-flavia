@@ -30,6 +30,7 @@ import GoogleMapWrapper from "./components/GoogleMapWrapper";
 import LocationSection from "./components/LocationSection";
 import { ClinicInfo } from "./types";
 import Depoimentos from "./components/Depoimentos";
+import { handleConversion } from "./util/handleConversion";
 
 // Available avatars for the chat head
 const AVATARS = [
@@ -134,6 +135,7 @@ export default function App() {
             <a
               id="header-cta-btn"
               target="_blank"
+              onClick={handleConversion}
               href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
               className="px-5 py-2.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all hover:shadow-sm"
             >
@@ -207,7 +209,10 @@ export default function App() {
                 <a
                   href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
                   target="_blank"
-                  onClick={closeMobileMenu}
+                  onClick={() => {
+                    closeMobileMenu();
+                    handleConversion();
+                  }}
                   className="w-full text-center block py-3.5 bg-coral-700 hover:bg-coral-800 text-white text-xs font-bold rounded-xl transition-colors"
                 >
                   Agendar Consulta
@@ -436,6 +441,7 @@ export default function App() {
                   <a
                     href="https://api.whatsapp.com/send?phone=5515988096168&text=Quero%20agendar%20uma%20consulta"
                     target="_blank"
+                    onClick={handleConversion}
                     rel="noreferrer"
                     className="hover:text-coral-400 underline font-medium block"
                   >

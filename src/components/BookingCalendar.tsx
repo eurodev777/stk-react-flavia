@@ -10,6 +10,7 @@ import {
   MapPin
 } from 'lucide-react';
 import { servicesData, therapistInfo } from '../data';
+import { handleConversion } from '../util/handleConversion';
 
 const DAYS_OF_WEEK = [
   { key: 'seg', label: 'Segunda-feira' },
@@ -267,6 +268,7 @@ export default function BookingCalendar() {
             <a
               id="confirm-booking-whatsapp"
               href={whatsappUrl}
+              onClick={handleConversion}
               target="_blank"
               rel="noreferrer"
               className="w-full py-4 px-6 bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/10 active:scale-98 text-white font-medium text-sm rounded-xl inline-flex items-center justify-center gap-2 cursor-pointer transition-all"
